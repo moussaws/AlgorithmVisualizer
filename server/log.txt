@@ -1,0 +1,1190 @@
+Server running on port 5000
+Entering node of type Program
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type ArrayExpression
+Entering node of type Literal
+Entering node of type Literal
+Entering node of type Literal
+Entering node of type Literal
+Entering node of type Literal
+Entering node of type ForStatement
+Handling ForStatement
+Initializing loop variable
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 0, condition: true
+Entering node of type ForStatement
+Handling ForStatement
+Initializing loop variable
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 0, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 0
+Context after updating loop variable: {"array":[2,3,5,10,1],"i":0,"j":1,"temp":2}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 1, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 1
+Context after updating loop variable: {"array":[2,3,5,10,1],"i":0,"j":2,"temp":3}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 2, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 2
+Context after updating loop variable: {"array":[2,3,5,10,1],"i":0,"j":3,"temp":5}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 3, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Swap indices out of bounds: leftIndex = 4, rightIndex = 5
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 3
+Context after updating loop variable: {"array":[2,3,5,1,10],"i":0,"j":4,"temp":1}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop ended
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 0
+Context after updating loop variable: {"array":[2,3,5,1,10],"i":1,"j":0,"temp":2}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 1, condition: true
+Entering node of type ForStatement
+Handling ForStatement
+Initializing loop variable
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 0, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 0
+Context after updating loop variable: {"array":[2,3,5,1,10],"i":1,"j":1,"temp":2}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 1, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 1
+Context after updating loop variable: {"array":[2,3,5,1,10],"i":1,"j":2,"temp":3}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 2, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 2
+Context after updating loop variable: {"array":[2,3,1,10,5],"i":1,"j":3,"temp":1}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop ended
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 1
+Context after updating loop variable: {"array":[2,3,1,10,5],"i":2,"j":0,"temp":2}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 2, condition: true
+Entering node of type ForStatement
+Handling ForStatement
+Initializing loop variable
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 0, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 0
+Context after updating loop variable: {"array":[2,3,1,10,5],"i":2,"j":1,"temp":2}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 1, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 1
+Context after updating loop variable: {"array":[2,1,10,3,5],"i":2,"j":2,"temp":1}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop ended
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 2
+Context after updating loop variable: {"array":[1,10,2,3,5],"i":3,"j":0,"temp":1}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 3, condition: true
+Entering node of type ForStatement
+Handling ForStatement
+Initializing loop variable
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 0, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 0
+Context after updating loop variable: {"array":[1,10,2,3,5],"i":3,"j":1,"temp":1}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop ended
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 3
+Context after updating loop variable: {"array":[1,10,2,3,5],"i":4,"j":0,"temp":1}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 4, condition: true
+Entering node of type ForStatement
+Handling ForStatement
+Initializing loop variable
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop ended
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 4
+Context after updating loop variable: {"array":[1,10,2,3,5],"i":5,"j":0,"temp":1}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop ended
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type ForStatement
+Handling ForStatement
+Initializing loop variable
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 0, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 0
+Context after updating loop variable: {"array":[1,10,2,3,5],"i":0,"j":1,"temp":1}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 1, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 1
+Context after updating loop variable: {"array":[1,2,3,10,5],"i":0,"j":2,"temp":2}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 2, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 2
+Context after updating loop variable: {"array":[1,2,3,10,5],"i":0,"j":3,"temp":3}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop iteration 3, condition: true
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Swap indices out of bounds: leftIndex = 4, rightIndex = 5
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Updating loop variable for iteration 3
+Context after updating loop variable: {"array":[1,2,3,5,10],"i":0,"j":4,"temp":5}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 5
+Loop ended
+Entering node of type VariableDeclaration
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier

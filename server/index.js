@@ -9,131 +9,140 @@ const port = 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
-const fs = require("fs");
+const fs = require('fs');
+const util = require('util');
+const logFile = fs.createWriteStream('log.txt', { flags: 'w' }); // 'log.txt' can be any file path
+console.log = function () { // redefine console.log to call logFile.write with the same arguments
+    logFile.write(util.format.apply(null, arguments) + '\n');
+}
 
 app.post("/upload", (req, res) => {
-  const fileContent = req.body.fileContent;
-  try {
-    const context = { variables: {}, history: [] };
-    const ast = esprima.parseScript(fileContent);
-    traverseAst(ast, context);
-    res.json({ history: context.history });
-  } catch (error) {
-    res
-      .status(400)
-      .json({ message: "Error parsing code", error: error.message });
-  }
+    const fileContent = req.body.fileContent;
+    try {
+        const context = { variables: {}, history: [] };
+        const ast = esprima.parseScript(fileContent);
+        traverseAst(ast, context);
+        res.json({ history: context.history });
+    } catch (error) {
+        res
+            .status(400)
+            .json({ message: "Error parsing code", error: error.message });
+    }
 });
 
 function traverseAst(node, context) {
-  estraverse.traverse(node, {
-    enter: (node) => {
-      if (node.type === "VariableDeclaration") {
-        handleVariableDeclaration(node, context);
-      } else if (node.type === "ForStatement") {
-        traverseAst(node.init, context);
-        while (evaluateExpression(node.test, context)) {
-          traverseAst(node.body, context);
-          evaluateExpression(node.update, context);
-        }
-      } else if (node.type === "AssignmentExpression") {
-        evaluateExpression(node, context);
-      }
-      if (node.type === "IfStatement") {
-        const testResult = evaluateExpression(node.test, context);
-        console.log(`IfStatement test result: ${testResult}`);
-        if (testResult) {
-          console.log(
-            `Expression type inside IfStatement: ${node.consequent.type}`
-          );
-          traverseAst(node.consequent, context);
-        } else if (node.alternate) {
-          traverseAst(node.alternate, context);
-        }
-      }
-    },
-  });
+    estraverse.traverse(node, {
+        enter: (node) => {
+            console.log(`Entering node of type ${node.type}`);
+            if (node.type === "VariableDeclaration") {
+                handleVariableDeclaration(node, context);
+            } else if (node.type === "ForStatement") {
+                handleLoopNode(node, context);
+            } else if (node.type === "IfStatement") {
+                handleIfStatement(node, context);
+            }
+            // ... handle other node types ...
+        },
+    });
 }
 
 function handleVariableDeclaration(node, context) {
-  node.declarations.forEach((declaration) => {
-    if (declaration.init) {
-      if (declaration.init.type === "ArrayExpression") {
-        // Handle array initialization
-        const arrayValues = declaration.init.elements.map((element) =>
-          evaluateExpression(element, context)
-        );
-        updateContext(declaration.id.name, arrayValues, context);
-      } else {
-        // Handle other initializations
-        const value = evaluateExpression(declaration.init, context);
-        updateContext(declaration.id.name, value, context);
-      }
-    }
-  });
+    node.declarations.forEach((declaration) => {
+        if (declaration.init) {
+            if (declaration.init.type === "ArrayExpression") {
+                // Handle array initialization
+                const arrayValues = declaration.init.elements.map((element) =>
+                    evaluateExpression(element, context)
+                );
+                updateContext(declaration.id.name, arrayValues, context);
+                updateContextHistory(context); // Add this line
+            } else {
+                // Handle other initializations
+                const value = evaluateExpression(declaration.init, context);
+                updateContext(declaration.id.name, value, context);
+                updateContextHistory(context); // Add this line
+            }
+        }
+    });
 }
-
-function handleLoopIteration(loopNode, context) {
-  console.log("Handling ForStatement");
-  console.log(`Initial context: ${JSON.stringify(context)}`);
-
-  // Initialize loop variables
-  console.log("Initializing loop variable");
-  traverseAst(loopNode.init, context);
-  updateContextHistory(context);
-
-  const maxIterations = 1000; // Set a maximum iteration count to prevent infinite loops
-  let iterationCount = 0;
-
-  while (
-    evaluateExpression(loopNode.test, context) &&
-    iterationCount < maxIterations
-  ) {
-    console.log(`Loop iteration ${iterationCount}, condition: true`);
-
-    // Execute loop body
-    traverseAst(loopNode.body, context);
-    // Capture context after loop body execution
-    updateContextHistory(context);
-
-    // Update loop variable
-    console.log(`Updating loop variable for iteration ${iterationCount}`);
-    traverseAst(loopNode.update, context);
-    updateContextHistory(context);
-
-    console.log(
-      `Context after updating loop variable: ${JSON.stringify(
-        context.variables
-      )}`
-    );
-
-    iterationCount++;
-  }
-
-  if (iterationCount >= maxIterations) {
-    console.log(
-      "Maximum iteration count reached, exiting loop to prevent infinite loop"
-    );
-  }
-
-  console.log("Loop ended");
-}
-
-function updateContextHistory(context) {
-  console.log(`Context before update: ${JSON.stringify(context.variables)}`);
-  context.history.push(JSON.parse(JSON.stringify(context.variables)));
-  console.log(`Context after update: ${JSON.stringify(context.history)}`);
-}
-
-function swap(array, index1, index2) {
-  let temp = array[index1];
-  array[index1] = array[index2];
-  array[index2] = temp;
-}
-
 function evaluateExpression(expression, context) {
-  console.log(`Expression type: ${expression.type}`);
-  if (expression.type === "AssignmentExpression") {
+    switch (expression.type) {
+        case "AssignmentExpression":
+            return handleAssignmentExpression(expression, context);
+        case "BinaryExpression":
+            return handleBinaryExpression(expression, context);
+        case "MemberExpression":
+            return handleMemberExpression(expression, context);
+        case "UpdateExpression":
+            return handleUpdateExpression(expression, context);
+        case "Literal":
+            return handleLiteralExpression(expression, context);
+        case "Identifier":
+            return handleIdentifierExpression(expression, context);
+        // ... handle other expression types ...
+        default:
+            throw new Error(`Unhandled expression type: ${expression.type}`);
+    }
+}
+function handleLiteralExpression(expression, context) {
+    // For Literal nodes, the value is directly available as expression.value
+    return expression.value;
+}
+
+function handleIdentifierExpression(expression, context) {
+    // For Identifier nodes, the value is the value of the variable in the context
+    const variableName = expression.name;
+    if (context.variables.hasOwnProperty(variableName)) {
+        return context.variables[variableName];
+    } else {
+        throw new Error(`Undefined variable: ${variableName}`);
+    }
+}
+
+function handleIfStatement(node, context) {
+    const testResult = evaluateExpression(node.test, context);
+
+    if (testResult) {
+        if (node.consequent.type === "BlockStatement") {
+            node.consequent.body.forEach((innerNode) => {
+                if (innerNode.type === "ExpressionStatement") {
+                    const expression = innerNode.expression;
+                    if (expression.type === "AssignmentExpression") {
+                        let arrayName = expression.left.object.name;
+                        let leftIndex = evaluateExpression(expression.left.property, context);
+                        let rightIndex;
+
+                        if (expression.right.property) {
+                            rightIndex = evaluateExpression(expression.right.property, context);
+                        } else {
+                            rightIndex = leftIndex + 1;
+                        }
+
+                        // Ensure the indices are within the array bounds
+                        if (leftIndex >= 0 && leftIndex < context.variables[arrayName].length &&
+                            rightIndex >= 0 && rightIndex < context.variables[arrayName].length) {
+                            // Perform the swap operation
+                            let temp = context.variables[arrayName][leftIndex];
+                            context.variables[arrayName][leftIndex] = context.variables[arrayName][rightIndex];
+                            context.variables[arrayName][rightIndex] = temp;
+
+                            updateContext('array', context.variables[arrayName], context);
+                            updateContextHistory(context);
+                        } else {
+                            // Handle out-of-bound indices
+                            console.log(`Swap indices out of bounds: leftIndex = ${leftIndex}, rightIndex = ${rightIndex}`);
+                        }
+                    }
+                }
+            });
+        }
+    } else if (node.alternate) {
+        traverseAst(node.alternate, context);
+    }
+}
+
+
+function handleAssignmentExpression(expression, context) {
     console.log("Entered AssignmentExpression block");
 
     // Evaluate the right-hand side
@@ -141,203 +150,223 @@ function evaluateExpression(expression, context) {
     console.log(`Right-hand side value: ${value}`);
 
     // Handle assignment to an array element
-    if (
-      expression.left.type === "MemberExpression" &&
-      expression.right.type === "MemberExpression"
-    ) {
-      console.log(`Potential swap operation detected`);
-
-      const arrayNameLeft = expression.left.object.name;
-      const indexLeft = evaluateExpression(expression.left.property, context);
-      const arrayNameRight = expression.right.object.name;
-      const indexRight = evaluateExpression(expression.right.property, context);
-
-      console.log(`arrayNameLeft: ${arrayNameLeft}, indexLeft: ${indexLeft}`);
-      console.log(
-        `arrayNameRight: ${arrayNameRight}, indexRight: ${indexRight}`
-      );
-
-      if (
-        context.variables.hasOwnProperty(arrayNameLeft) &&
-        context.variables.hasOwnProperty(arrayNameRight)
-      ) {
-        console.log(`Both arrays found in context`);
-
-        const arrayLeft = context.variables[arrayNameLeft];
-        const arrayRight = context.variables[arrayNameRight];
-
-        if (
-          Array.isArray(arrayLeft) &&
-          Array.isArray(arrayRight) &&
-          indexLeft < arrayLeft.length &&
-          indexRight < arrayRight.length
-        ) {
-          console.log(
-            `Performing swap operation on arrays ${arrayNameLeft} and ${arrayNameRight}`
-          );
-          let temp = arrayLeft[indexLeft];
-          arrayLeft[indexLeft] = arrayRight[indexRight];
-          arrayRight[indexRight] = temp;
-
-          // Update the entire arrays in the context history
-          context.history.push({
-            [arrayNameLeft]: [...arrayLeft],
-            [arrayNameRight]: [...arrayRight],
-          });
-          return; // Return after performing the swap
-        }
-      }
+    if (expression.left.type === "MemberExpression") {
+        return handleArrayElementAssignment(expression, context, value);
     }
     // Handle assignment to a simple variable
     else if (expression.left.type === "Identifier") {
-      console.log(`Simple variable assignment detected`);
-      updateContext(expression.left.name, value, context);
-      return value;
+        console.log(`Simple variable assignment detected`);
+        updateContext(expression.left.name, value, context, true);
+        return value;
     }
-  } else if (expression.type === "UpdateExpression") {
-    console.log("Entered UpdateExpression block");
-
-    const oldValue = evaluateExpression(expression.argument, context);
-    console.log(`Old value of ${expression.argument.name}: ${oldValue}`);
-    let newValue;
-
-    // Handle increment and decrement
-    if (expression.operator === "++") {
-      newValue = oldValue + 1;
-    } else if (expression.operator === "--") {
-      newValue = oldValue - 1;
+    // Handle other types of expressions
+    else {
+        throw new Error(`Unhandled expression type: ${expression.left.type}`);
     }
+}
 
-    console.log(`New value of ${expression.argument.name}: ${newValue}`);
+function handleArrayElementAssignment(expression, context, value) {
+    console.log(`Potential array element assignment detected`);
 
-    // Update the variable in context
-    if (expression.argument.type === "Identifier") {
-      updateContext(expression.argument.name, newValue, context);
+    const arrayName = expression.left.object.name;
+    const index = evaluateExpression(expression.left.property, context);
+
+    console.log(`arrayName: ${arrayName}, index: ${index}`);
+
+    if (context.variables.hasOwnProperty(arrayName)) {
+        console.log(`Array found in context`);
+
+        const array = context.variables[arrayName];
+
+        if (Array.isArray(array)) {
+            if (index >= 0 && index < array.length) {
+                console.log(`Performing assignment operation on array ${arrayName}`);
+                array[index] = value;
+                console.log(`Performed assignment operation on array ${arrayName} at index ${index}`);
+            } else {
+                console.log(`Index ${index} is out of bounds for array ${arrayName}`);
+            }
+
+            // Update the entire array in the context history
+            context.history.push({
+                [arrayName]: [...array],
+            });
+            return; // Return after performing the assignment
+        }
     }
+}
 
-    return newValue;
-  } else if (expression.type === "MemberExpression") {
+function handleBinaryExpression(expression, context) {
+    console.log("Entered BinaryExpression block");
+
+    const leftValue = evaluateExpression(expression.left, context);
+    const rightValue = evaluateExpression(expression.right, context);
+
+    switch (expression.operator) {
+        case "+":
+            return leftValue + rightValue;
+        case "-":
+            return leftValue - rightValue;
+        case "<":
+            return leftValue < rightValue;
+        case ">":
+            return leftValue > rightValue;
+        // ... handle other operators ...
+    }
+}
+
+function handleMemberExpression(expression, context) {
+    console.log(`Entered MemberExpression block`);
+
     const objectName = expression.object.name;
 
     if (expression.computed) {
-      // Handle computed MemberExpression (array access)
-      const indexExpression = expression.property;
+        // Handle computed MemberExpression (array access)
+        const indexExpression = expression.property;
 
-      if (context.variables.hasOwnProperty(objectName)) {
-        const array = context.variables[objectName];
-        if (Array.isArray(array)) {
-          const index = evaluateExpression(indexExpression, context);
-          // Check if index is within bounds before accessing the array
-          if (typeof index === "number" && index >= 0 && index < array.length) {
-            return array[index];
-          } else {
-            console.log(`Index ${index} out of bounds for array ${arrayName}`);
-            // Return null to indicate out-of-bounds access
-            return null;
-          }
+        if (context.variables.hasOwnProperty(objectName)) {
+            const array = context.variables[objectName];
+            if (Array.isArray(array)) {
+                const index = evaluateExpression(indexExpression, context);
+
+                // Check if index is within bounds before accessing the array
+                if (typeof index === "number" && index >= 0 && index < array.length) {
+                    return array[index];
+                } else {
+                    console.log(`Index ${index} out of bounds for array ${objectName}`);
+                    // Throw an error to indicate out-of-bounds access
+                    throw new Error(`Index ${index} out of bounds for array ${objectName}`);
+                }
+            } else {
+                console.log(`${objectName} is not an array.`);
+                // Handle cases where the object is not an array
+                throw new Error(`${objectName} is not an array`);
+            }
         } else {
-          console.log(`${objectName} is not an array.`);
+            console.log(`Array ${objectName} not found in context.`);
+            // Handle cases where the array is not found in the context
+            throw new Error(`Array ${objectName} not found in context`);
         }
-      } else {
-        console.log(`Array ${objectName} not found in context.`);
-      }
     } else if (expression.property.type === "Identifier") {
-      const propertyName = expression.property.name;
+        const propertyName = expression.property.name;
 
-      // Check if the object is an array and the property is 'length'
-      if (context.variables.hasOwnProperty(objectName)) {
-        console.log(`Found ${objectName} in context.`);
-        const object = context.variables[objectName];
-        console.log(
-          `Object type: ${typeof object}, isArray: ${Array.isArray(object)}`
-        );
-        if (Array.isArray(object) && propertyName === "length") {
-          console.log(`Array length found: ${object.length}`);
-          return object.length;
+        // Check if the object is an array and the property is 'length'
+        if (context.variables.hasOwnProperty(objectName)) {
+            console.log(`Found ${objectName} in context.`);
+            const object = context.variables[objectName];
+            console.log(`Object type: ${typeof object}, isArray: ${Array.isArray(object)}`);
+            if (Array.isArray(object) && propertyName === "length") {
+                console.log(`Array length found: ${object.length}`);
+                return object.length;
+            }
+        } else {
+            console.log(`Object ${objectName} not found in context.`);
+            // Handle cases where the object is not found in the context
+            throw new Error(`Object ${objectName} not found in context`);
         }
-      } else {
-        console.log(`Object ${objectName} not found in context.`);
-      }
     }
-  } else if (expression.type === "BinaryExpression") {
-    console.log("Entered BinaryExpression block");
-    const leftValue = evaluateExpression(expression.left, context);
-    const rightValue = evaluateExpression(expression.right, context);
-
-    // Check for out-of-bounds errors before evaluating the binary expression
-    if (
-      leftValue === "Error: Index out of bounds" ||
-      rightValue === "Error: Index out of bounds"
-    ) {
-      console.log(`Error: One of the operands is out of bounds.`);
-      return "Error";
-    }
-
-    switch (expression.operator) {
-      case "+":
-        return leftValue + rightValue;
-      case "-":
-        return leftValue - rightValue;
-      case "<":
-        return leftValue < rightValue;
-      case ">":
-        if (rightValue === "Unresolved") {
-          console.log(
-            `Error: Right-hand side of expression could not be resolved.`
-          );
-          return "Error";
-        }
-        return leftValue > rightValue;
-      case "==":
-        return leftValue == rightValue;
-      // ... handle other operators ...
-    }
-  } else if (expression.type === "Literal") {
-    return expression.value;
-  } else if (expression.type === "Identifier") {
-    if (context.variables.hasOwnProperty(expression.name)) {
-      console.log(
-        `Value of ${expression.name}: ${context.variables[expression.name]}`
-      );
-      return context.variables[expression.name];
-    } else {
-      console.log(`Identifier ${expression.name} not found in context.`);
-      return "Unresolved";
-    }
-  } else if (
-    expression.type === "BinaryExpression" &&
-    expression.left.type === "Identifier" &&
-    expression.left.name === "i" &&
-    expression.right.type === "MemberExpression"
-  ) {
-    const leftValue = evaluateExpression(expression.left, context);
-    const rightValue = evaluateExpression(expression.right, context);
-    console.log(`Loop condition: ${leftValue} < ${rightValue}`);
-    return leftValue < rightValue;
-  } else if (expression.type === "LogicalExpression") {
-    const left = evaluateExpression(expression.left, context);
-    const right = evaluateExpression(expression.right, context);
-    switch (expression.operator) {
-      case "&&":
-        return left && right;
-      case "||":
-        return left || right;
-      // Add other operators as needed
-    }
-  }
-
-  return "Unresolved";
+    // Handle other MemberExpression cases or throw an error
+    throw new Error(`Unhandled MemberExpression type`);
 }
 
-function updateContext(variableName, newValue, context) {
-  console.log(`Updating context for ${variableName}: ${newValue}`);
-  context.variables[variableName] = newValue;
 
-  // Record the new state of the context
-  context.history.push({ [variableName]: newValue });
+function handleUpdateExpression(expression, context) {
+    // For UpdateExpression nodes, the value is the updated value of the variable in the context
+    const variableName = expression.argument.name;
+    let newValue;
+    if (expression.operator === "++") {
+        newValue = context.variables[variableName] + 1;
+    } else if (expression.operator === "--") {
+        newValue = context.variables[variableName] - 1;
+    }
+    updateContext(variableName, newValue, context, true);}
+
+
+
+function handleLoopNode(node, context) {
+    console.log("Handling ForStatement");
+
+    // Initialize loop variable
+    console.log("Initializing loop variable");
+    if (node.init.type === "VariableDeclaration") {
+        handleVariableDeclaration(node.init, context);
+    } else if (node.init.type === "AssignmentExpression") {
+        handleAssignmentExpression(node.init, context);
+    }
+    updateContextHistory(context);
+
+    const maxIterations = 1000; // Set a maximum iteration count to prevent infinite loops
+    let iterationCount = 0;
+
+    while (
+        evaluateExpression(node.test, context) &&
+        iterationCount < maxIterations
+    ) {
+        console.log(`Loop iteration ${iterationCount}, condition: true`);
+
+        // Execute loop body
+        if (node.body.type === "BlockStatement") {
+            node.body.body.forEach(innerNode => {
+                traverseAst(innerNode, context); // Pass the current context to the inner loop
+            });
+        } else {
+            traverseAst(node.body, context); // Pass the current context to the inner loop
+        }
+        // Capture context after loop body execution
+        updateContextHistory(context);
+
+        // Update loop variable
+        console.log(`Updating loop variable for iteration ${iterationCount}`);
+        if (node.update.type === "UpdateExpression") {
+            handleUpdateExpression(node.update, context);
+        }
+        updateContextHistory(context);
+
+        console.log(
+            `Context after updating loop variable: ${JSON.stringify(
+                context.variables
+            )}`
+        );
+
+        iterationCount++;
+    }
+
+    if (iterationCount >= maxIterations) {
+        console.log(
+            "Maximum iteration count reached, exiting loop to prevent infinite loop"
+        );
+    }
+
+    console.log("Loop ended");
+}
+
+
+
+function updateContextHistory(context) {
+    // Get the last entry in the history
+    const lastEntry = context.history[context.history.length - 1];
+
+    // Only push the current context to the history if it's different from the last entry
+    if (!lastEntry || 
+        lastEntry.array.toString() !== context.variables.array.toString() ||
+        lastEntry.i !== context.variables.i ||
+        lastEntry.j !== context.variables.j ||
+        lastEntry.temp !== context.variables.temp) {
+        context.history.push(JSON.parse(JSON.stringify(context.variables)));
+    }
+}
+
+function updateContext(name, value, context, updateHistory = false) {
+    // Check if the value has changed before updating
+    if (context.variables[name] !== value) {
+        context.variables[name] = value;
+        if (updateHistory) {
+            updateContextHistory(context);
+        }
+    }
 }
 
 const server = app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+    console.log(`Server running on port ${port}`);
 });
 server.timeout = 300000;
