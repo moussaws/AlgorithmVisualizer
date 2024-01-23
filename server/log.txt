@@ -1,6 +1,7 @@
 Server running on port 5000
 Entering node of type Program
 Entering node of type VariableDeclaration
+Updating history at line 1: {"variables":{"array":[6,0,3,5]},"history":[]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type ArrayExpression
@@ -8,34 +9,54 @@ Entering node of type Literal
 Entering node of type Literal
 Entering node of type Literal
 Entering node of type Literal
-Entering node of type Literal
 Entering node of type ForStatement
-Handling ForStatement
-Initializing loop variable
+Updating history at line 2: {"variables":{"array":[6,0,3,5],"i":0},"history":[{"line":1,"array":[6,0,3,5]}]}
+Updating history at line 2: {"variables":{"array":[6,0,3,5],"i":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0}]}
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
 Loop iteration 0, condition: true
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Entering node of type ForStatement
-Handling ForStatement
-Initializing loop variable
+Updating history at line 3: {"variables":{"array":[6,0,3,5],"i":0,"j":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0}]}
+Updating history at line 3: {"variables":{"array":[6,0,3,5],"i":0,"j":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0}]}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
 Loop iteration 0, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Entering node of type IfStatement
 Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[6,0,3,5],"i":0,"j":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0}]}
 Entered BinaryExpression block
+Updating history at line 6: {"variables":{"array":[6,0,3,5],"i":0,"j":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0}]}
+Updating history at line 6: {"variables":{"array":[6,0,3,5],"i":0,"j":0,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0}]}
+Line 7: array[j+1] = temp;
+Updating history at line 7: {"variables":{"array":[0,6,3,5],"i":0,"j":0,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6}]}
 Entered BinaryExpression block
+Updating history at line 7: {"variables":{"array":[0,6,3,5],"i":0,"j":0,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6}]}
+Line 8: array[j+1] = temp;
+Updating history at line 8: {"variables":{"array":[0,3,6,5],"i":0,"j":0,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6}]}
+Updating history at line 8: {"variables":{"array":[0,3,6,5],"i":0,"j":0,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -48,6 +69,8 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,6,5],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6}]}
+Updating history at line 5: {"variables":{"array":[0,3,6,5],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
@@ -71,21 +94,46 @@ Entering node of type BinaryExpression
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type Identifier
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Updating loop variable for iteration 0
-Context after updating loop variable: {"array":[2,3,5,10,1],"i":0,"j":1,"temp":2}
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,6,5],"i":0,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0}]}
+Updating history at line 3: {"variables":{"array":[0,3,6,5],"i":0,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0}]}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Loop iteration 1, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Entering node of type IfStatement
 Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,6,5],"i":0,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -98,6 +146,8 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,6,5],"i":0,"j":1,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0}]}
+Updating history at line 5: {"variables":{"array":[0,3,6,5],"i":0,"j":1,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
@@ -121,21 +171,55 @@ Entering node of type BinaryExpression
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type Identifier
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Updating loop variable for iteration 1
-Context after updating loop variable: {"array":[2,3,5,10,1],"i":0,"j":2,"temp":3}
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,6,5],"i":0,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3}]}
+Updating history at line 3: {"variables":{"array":[0,3,6,5],"i":0,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3}]}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Loop iteration 2, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Entering node of type IfStatement
 Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,6,5],"i":0,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3}]}
+Entered BinaryExpression block
+Updating history at line 6: {"variables":{"array":[0,3,6,5],"i":0,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3}]}
+Updating history at line 6: {"variables":{"array":[0,3,6,5],"i":0,"j":2,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3}]}
+Line 7: array[j+1] = temp;
+Updating history at line 7: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6}]}
+Entered BinaryExpression block
+Updating history at line 7: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6}]}
+Swap indices out of bounds: leftIndex = 3, rightIndex = 4
+Updating history at line 8: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":6},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -148,6 +232,8 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6}]}
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
@@ -171,24 +257,550 @@ Entering node of type BinaryExpression
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type Identifier
-Updating loop variable for iteration 2
-Context after updating loop variable: {"array":[2,3,5,10,1],"i":0,"j":3,"temp":5}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
+Updating loop variable for iteration 2
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":3,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":3,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type VariableDeclaration
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5}]}
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5}]}
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Updating loop variable for iteration 0
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0}]}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Loop iteration 1, condition: true
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type ForStatement
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Loop iteration 0, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0}]}
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Updating loop variable for iteration 0
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":1,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":1,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Loop iteration 1, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":1,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0}]}
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":1,"j":1,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0}]}
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":1,"j":1,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Updating loop variable for iteration 1
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":1,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":1,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type VariableDeclaration
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3}]}
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3}]}
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":1,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Updating loop variable for iteration 1
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0}]}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Loop iteration 2, condition: true
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type ForStatement
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Loop iteration 0, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Updating loop variable for iteration 0
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":2,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":2,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type VariableDeclaration
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
+Entering node of type IfStatement
+Entered BinaryExpression block
+Entered MemberExpression block
+Entered MemberExpression block
+Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BlockStatement
+Entering node of type VariableDeclaration
+Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":2,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type ExpressionStatement
+Entering node of type AssignmentExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type Identifier
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Updating loop variable for iteration 2
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":3,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0}]}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":3,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0}]}
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Loop iteration 3, condition: true
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type ForStatement
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":3,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entering node of type VariableDeclaration
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":3,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0}]}
+Entering node of type VariableDeclarator
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type BinaryExpression
+Entering node of type Identifier
+Entering node of type BinaryExpression
+Entering node of type BinaryExpression
+Entering node of type MemberExpression
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Identifier
+Entering node of type Literal
+Entering node of type UpdateExpression
+Entering node of type Identifier
+Entering node of type BlockStatement
 Entering node of type IfStatement
 Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Swap indices out of bounds: leftIndex = 4, rightIndex = 5
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":3,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -201,6 +813,7 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":3,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
@@ -224,96 +837,58 @@ Entering node of type BinaryExpression
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type Identifier
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Updating loop variable for iteration 3
-Context after updating loop variable: {"array":[2,3,5,1,10],"i":0,"j":4,"temp":1}
-Entered BinaryExpression block
-Entered BinaryExpression block
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"i","loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":35}}},"prefix":false,"loc":{"start":{"line":2,"column":34},"end":{"line":2,"column":37}}}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":4,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0}]}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":4,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0}]}
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
-Loop ended
+Array length found: 4
 Entering node of type VariableDeclaration
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0}]}
+Updating history at line 2: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type BinaryExpression
 Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
 Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Literal
 Entering node of type UpdateExpression
 Entering node of type Identifier
 Entering node of type BlockStatement
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 0
-Context after updating loop variable: {"array":[2,3,5,1,10],"i":1,"j":0,"temp":2}
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 1, condition: true
 Entering node of type ForStatement
-Handling ForStatement
-Initializing loop variable
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
 Loop iteration 0, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Entering node of type IfStatement
 Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -326,6 +901,7 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
@@ -349,21 +925,46 @@ Entering node of type BinaryExpression
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type Identifier
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Updating loop variable for iteration 0
-Context after updating loop variable: {"array":[2,3,5,1,10],"i":1,"j":1,"temp":2}
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0}]}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Loop iteration 1, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Entering node of type IfStatement
 Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":0,"j":1,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -376,6 +977,8 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":1,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0}]}
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":1,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
@@ -399,23 +1002,46 @@ Entering node of type BinaryExpression
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type Identifier
-Updating loop variable for iteration 1
-Context after updating loop variable: {"array":[2,3,5,1,10],"i":1,"j":2,"temp":3}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
+Array length found: 4
+Updating loop variable for iteration 1
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3}]}
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Loop iteration 2, condition: true
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Entering node of type IfStatement
 Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":3},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -428,6 +1054,8 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3}]}
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":2,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
@@ -451,17 +1079,28 @@ Entering node of type BinaryExpression
 Entering node of type Identifier
 Entering node of type Literal
 Entering node of type Identifier
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered BinaryExpression block
+Entered MemberExpression block
+Found array in context.
+Object type: object, isArray: true
+Array length found: 4
 Updating loop variable for iteration 2
-Context after updating loop variable: {"array":[2,3,1,10,5],"i":1,"j":3,"temp":1}
+UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Handling UpdateExpression: {"type":"UpdateExpression","operator":"++","argument":{"type":"Identifier","name":"j","loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":47}}},"prefix":false,"loc":{"start":{"line":3,"column":46},"end":{"line":3,"column":49}}}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":3,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":3,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5}]}
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered BinaryExpression block
 Entered MemberExpression block
 Found array in context.
 Object type: object, isArray: true
-Array length found: 5
-Loop ended
+Array length found: 4
 Entering node of type VariableDeclaration
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5}]}
+Updating history at line 3: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type Literal
@@ -482,6 +1121,7 @@ Entered BinaryExpression block
 Entered MemberExpression block
 Entered MemberExpression block
 Entered BinaryExpression block
+Updating history at line 4: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":5},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5}]}
 Entering node of type BinaryExpression
 Entering node of type MemberExpression
 Entering node of type Identifier
@@ -494,677 +1134,8 @@ Entering node of type Literal
 Entering node of type BlockStatement
 Entering node of type VariableDeclaration
 Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 1
-Context after updating loop variable: {"array":[2,3,1,10,5],"i":2,"j":0,"temp":2}
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 2, condition: true
-Entering node of type ForStatement
-Handling ForStatement
-Initializing loop variable
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 0, condition: true
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 0
-Context after updating loop variable: {"array":[2,3,1,10,5],"i":2,"j":1,"temp":2}
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 1, condition: true
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 1
-Context after updating loop variable: {"array":[2,1,10,3,5],"i":2,"j":2,"temp":1}
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop ended
-Entering node of type VariableDeclaration
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type UpdateExpression
-Entering node of type Identifier
-Entering node of type BlockStatement
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 2
-Context after updating loop variable: {"array":[1,10,2,3,5],"i":3,"j":0,"temp":1}
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 3, condition: true
-Entering node of type ForStatement
-Handling ForStatement
-Initializing loop variable
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 0, condition: true
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 0
-Context after updating loop variable: {"array":[1,10,2,3,5],"i":3,"j":1,"temp":1}
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop ended
-Entering node of type VariableDeclaration
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type UpdateExpression
-Entering node of type Identifier
-Entering node of type BlockStatement
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 3
-Context after updating loop variable: {"array":[1,10,2,3,5],"i":4,"j":0,"temp":1}
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 4, condition: true
-Entering node of type ForStatement
-Handling ForStatement
-Initializing loop variable
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop ended
-Entering node of type VariableDeclaration
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type UpdateExpression
-Entering node of type Identifier
-Entering node of type BlockStatement
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 4
-Context after updating loop variable: {"array":[1,10,2,3,5],"i":5,"j":0,"temp":1}
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop ended
-Entering node of type VariableDeclaration
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type UpdateExpression
-Entering node of type Identifier
-Entering node of type BlockStatement
-Entering node of type ForStatement
-Handling ForStatement
-Initializing loop variable
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 0, condition: true
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 0
-Context after updating loop variable: {"array":[1,10,2,3,5],"i":0,"j":1,"temp":1}
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 1, condition: true
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 1
-Context after updating loop variable: {"array":[1,2,3,10,5],"i":0,"j":2,"temp":2}
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 2, condition: true
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 2
-Context after updating loop variable: {"array":[1,2,3,10,5],"i":0,"j":3,"temp":3}
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop iteration 3, condition: true
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Swap indices out of bounds: leftIndex = 4, rightIndex = 5
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type ExpressionStatement
-Entering node of type AssignmentExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type Identifier
-Updating loop variable for iteration 3
-Context after updating loop variable: {"array":[1,2,3,5,10],"i":0,"j":4,"temp":5}
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered BinaryExpression block
-Entered MemberExpression block
-Found array in context.
-Object type: object, isArray: true
-Array length found: 5
-Loop ended
-Entering node of type VariableDeclaration
-Entering node of type VariableDeclarator
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type UpdateExpression
-Entering node of type Identifier
-Entering node of type BlockStatement
-Entering node of type IfStatement
-Entered BinaryExpression block
-Entered MemberExpression block
-Entered MemberExpression block
-Entered BinaryExpression block
-Entering node of type BinaryExpression
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type Identifier
-Entering node of type MemberExpression
-Entering node of type Identifier
-Entering node of type BinaryExpression
-Entering node of type Identifier
-Entering node of type Literal
-Entering node of type BlockStatement
-Entering node of type VariableDeclaration
-Entered MemberExpression block
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5}]}
+Updating history at line 5: {"variables":{"array":[0,3,5,6],"i":0,"j":0,"temp":0},"history":[{"line":1,"array":[6,0,3,5]},{"line":2,"array":[6,0,3,5],"i":0},{"line":3,"array":[6,0,3,5],"i":0,"j":0},{"line":6,"array":[6,0,3,5],"i":0,"j":0,"temp":6},{"line":7,"array":[0,6,3,5],"i":0,"j":0,"temp":6},{"line":8,"array":[0,3,6,5],"i":0,"j":0,"temp":6},{"line":5,"array":[0,3,6,5],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,6,5],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,6,5],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,6,5],"i":0,"j":2,"temp":3},{"line":6,"array":[0,3,6,5],"i":0,"j":2,"temp":6},{"line":7,"array":[0,3,5,6],"i":0,"j":2,"temp":6},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":1,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":1,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":2,"temp":3},{"line":3,"array":[0,3,5,6],"i":1,"j":0,"temp":3},{"line":5,"array":[0,3,5,6],"i":1,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":1,"temp":0},{"line":3,"array":[0,3,5,6],"i":2,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":3,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":4,"j":0,"temp":0},{"line":2,"array":[0,3,5,6],"i":0,"j":0,"temp":0},{"line":3,"array":[0,3,5,6],"i":0,"j":1,"temp":0},{"line":5,"array":[0,3,5,6],"i":0,"j":1,"temp":3},{"line":3,"array":[0,3,5,6],"i":0,"j":2,"temp":3},{"line":5,"array":[0,3,5,6],"i":0,"j":2,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":3,"temp":5},{"line":3,"array":[0,3,5,6],"i":0,"j":0,"temp":5},{"line":5,"array":[0,3,5,6],"i":0,"j":0,"temp":0}]}
 Entering node of type VariableDeclarator
 Entering node of type Identifier
 Entering node of type MemberExpression
